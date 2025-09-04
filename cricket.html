@@ -1,56 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cric-Mera</title>
-    <link rel="stylesheet" href="cricket.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cric-Mera 🏏</title>
+  <link rel="stylesheet" href="cricket.css">
 </head>
 <body>
+    <h1>Welcome to Cric-Mera</h1>
+    <p>Your cricket prediction simulator project begins here.</p>
+    <select id="options">
+    <option value="">-- Select Option --</option>
+    <option value="option1">Option 1</option>
+    <option value="option2">Option 2</option>
+    </select>
 
-    <div class="header">
-        <div class="container">
-            <div class="logo">Cric-Mera</div>
-        </div>
-    </div>
+    <div id="inputGroups"></div>
 
-    <div class="container">
-        <div class="match-header">
-            <div class="match-title">India vs Australia - 3rd ODI</div>
-            <div class="match-status">
-                <div class="live-indicator">LIVE</div>
-                <div>Mumbai, Wankhede Stadium</div>
-                <div>50 Overs Match</div>
-            </div>
-        </div>
-    </div>
+    <button id="submitBtn">Submit All Players</button>
 
-    <div class="scoreboard">
-        <div class="team-score">
-            <div class="team-name">India</div>
-            <div class="score-details">
-                <div class="runs-wickets" id="team1-score">245/4</div>
-                <div class="overs" id="team1-overs">(43.3/50 ov)</div>
-                <div class="run-rate">RR: <span id="team1-rr">5.82</span></div>
-            </div>
-        </div>
-        <div class="team-score">
-            <div class="team-name">Australia</div>
-            <div class="score-details">
-                <div class="runs-wickets" id="team2-score">Yet to bat</div>
-                <div class="overs" id="team2-overs"></div>
-                <div class="run-rate"><span id="team2-rr"></span></div>
-            </div>
-        </div>
-    </div>
-
-
-    </div>
-
+    <!-- ✅ Output Section -->
+    <h3>Player List</h3>
+    <div id="playerList"></div>
     
-
-
-
-    <script src="cricket.js"></script>
+  <script src="cricket.js"></script>
 </body>
 </html>
